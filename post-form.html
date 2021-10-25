@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма связи</title>
+    <link rel="stylesheet" href="style-form.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" id="form" class="form-body">
+                <h1 class= form_title> Отправка данных на почту</h1>
+                <div class="form_item">
+                    <label for="form_name" class="form_label">Имя*</label>
+                    <input type="text" name="name" id="form_name" class="form_input" required>
+                </div>
+                <div class="form_item">
+                    <label for="form_email" class="form_label">E-mail*</label>
+                    <input type="text" name="email" id="form_email" class="form_input" required>
+                </div>
+                <div class="form_item">
+                    <div class="form_label"><span>Ваши впечатления от сайта</span></div>
+                    <div class="options">
+                        <div class="options_item">
+                            <input id="good_meaning" type="radio" name="meaning" class="options_input">
+                            <label for="good_meaning" class="option_label">Понравилось</label>
+                        </div>
+                        <div class="options_item">
+                            <input id="bad_meaning" type="radio" name="meaning" class="options_input">
+                            <label for="bad_meaning" class="option_label">Не понравилось</label>
+                        </div>
+                        <div class="options_item">
+                            <input id="neitral" type="radio" name="meaning" class="options_input">
+                            <label for="neitral" class="option_label">Безразлично</label>
+                        </div>
+                        <div class="options_item"></div>
+                    </div>
+                </div>
+                <div class="form_item">
+                    <label for="form_message" class="form_label">Ваше сообщение</label>
+                    <textarea name="message" id="form_message" cols="30" rows="10" class="form_input"></textarea>
+                </div>
+                <div class="form_item">
+                    <div class="form_label">Ваша возрастная группа</div>
+                    <select name="age" id="age" class="select">
+                        <option value="18-30">18-30</option>
+                        <option value="31-40">31-40</option>
+                        <option value="41-50">41-50</option>
+                        <option value="51-60">51-60</option>
+                    </select>
+                </div>
+                <div class="form_item">
+                    <div class="form_label">Прикрепить фото</div>
+                    <div class="file">
+                        <div class="file_item">
+                            <input type="file" accept=".jpg, .png, .svg" name="image" class="file_input">
+                            <div class="file_button">Выбрать</div>
+                            <div class="file_preview"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_item">
+                    <div class="checkbox">
+                        <input type="checkbox" checked name="agreement" class="checkbox_input" id="agreement">
+                        <label for="agreement"><span>Даю согласие на  обработку персональных данных в соответствии с действующим законодательством</span></label>
+                    </div>
+                </div>
+                <button class="form_button"type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
